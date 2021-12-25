@@ -6,7 +6,7 @@ import pickle
 
 def load_data():
     # load original data
-    df_original = pd.read_excel(r'C:\Users\shiva\ExcelR\Project\CO2 dataset.xlsx')
+    df_original = pd.read_excel('CO2 dataset.xlsx')
     df_original.index = pd.to_datetime(df_original['Year'], format='%Y')
     df_original.drop('Year', axis=1, inplace=True)
     return df_original
@@ -14,7 +14,7 @@ def load_data():
 
 def load_pkl():
     # load pkl file
-    pickled_model = pickle.load(open('C:\\Users\\shiva\\ExcelR\\Project\\oncloud\\arimafoo.pkl', 'rb'))
+    pickled_model = pickle.load(open('arimafoo.pkl', 'rb'))
     return pickled_model
 
 
