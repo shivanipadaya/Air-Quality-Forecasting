@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
+import plotly
 import pickle
 
 
@@ -44,7 +44,7 @@ def predict(end):
 
 
 def plot_raw_data(data):
-    fig = go.Figure()
+    fig = plotly.graph_objects.Figure()
     fig.update_layout(width=850, height=650)
     fig.add_trace(go.Scatter(x=data.index, y=data['CO2'], name='Air Quality'))
     fig.layout.update(title_text="Yearly CO2 levels", xaxis_title='Years')
