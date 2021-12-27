@@ -9,21 +9,21 @@ This dataset contains yearly Co2 emmisions levels. data from 1800 to 2014 sample
 # Analysis and transforms
 
   * Time series decomposition
-    Level
-    Trend
-    Seasonality
-    Noise
-    Stationarity
+    * Level
+    * Trend
+    * Seasonality
+    * Noise
+    * Stationarity
 
   * AC and PAC plots
-    Rolling mean and std
-    Dickey-Fuller test
-    Making our time series stationary
+    * Rolling mean and std
+    * Dickey-Fuller test
+    * Making our time series stationary
 
   * Difference transform
-    Log scale
-    Smoothing
-    Moving average
+    * Log scale
+    * Smoothing
+    * Moving average
     
 # Models tested
 
